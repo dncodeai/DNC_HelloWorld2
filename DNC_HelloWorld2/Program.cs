@@ -67,7 +67,7 @@ internal class Program
 """;
 
         int ret = C_Interpreter_Test_Class.RunC(cTestProgramSrc);
-
+        
         Console.WriteLine("Return code = " + ret);
     }
 }
@@ -77,6 +77,8 @@ public static class C_Interpreter_Test_Class
     public static int RunC(string cProgramBody)
     {
         // ここに RunC の実体を実装せよ。
+
+        // TODO
         return 123;
     }
 }
@@ -85,5 +87,7 @@ public static class C_Interpreter_Test_Class
 namespace C_Interpreter_Impl
 {
     // ここにクラスを色々作成し、C インタプリタを実装せよ。
+
+    // TODO
 }
 
