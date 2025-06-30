@@ -67,6 +67,7 @@ internal class Program
             int main()
             {
             	char tmp[128] = { 0 };
+                char tmp2[128] = { 0 };
 
             	int ans;
 
@@ -78,11 +79,15 @@ internal class Program
 
             	for (int i = 0;i < 4;i++)
             	{
-            		sprintf(tmp, "%d * %d = %d", a, a, test(a));
+            		sprintf(tmp2, "%d * %d = %d", a, a, test(a));
             		printf("%s\n", tmp);
 
             		multiple_by(&a, 2);
             	}
+
+                int x = test(3);
+                x++;
+                printf("%d\n",x);
 
             	ans = tarai(3, 2, 0);
             	printf("ans = %d\n", ans);
